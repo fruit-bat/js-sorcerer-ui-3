@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? '/js-sorcerer-ui-3/' : '/',
   lintOnSave: false,
   chainWebpack: config => {
     config.module
